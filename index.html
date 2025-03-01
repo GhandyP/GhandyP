@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi primera página web con GitHub Pages</title>
+  <meta charset="UTF-8">
+  <title>Mi Blog con GitHub Pages</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Esta es mi primera página web alojada en GitHub Pages.</p>
+  <header>
+    <h1>Mi Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <article>
+        <h2>Título de la Entrada</h2>
+        <p class="meta">Publicado el 1 de Enero de 2025</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#">Leer más</a>
+      </article>
+      
+      <article>
+        <h2>Otra Entrada de Blog</h2>
+        <p class="meta">Publicado el 15 de Enero de 2025</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#">Leer más</a>
+      </article>
+    </main>
+    
+    <aside>
+      <div class="widget">
+        <h3>Acerca de mí</h3>
+        <p>Breve descripción sobre mí y el blog.</p>
+      </div>
+      <div class="widget">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#">Tecnología</a></li>
+          <li><a href="#">Vida</a></li>
+          <li><a href="#">Viajes</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
