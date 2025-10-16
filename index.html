@@ -1,57 +1,407 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Blog con GitHub Pages</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de GhandyP, Desarrollador Full-Stack especializado en la creación de aplicaciones web modernas y robustas con JavaScript, React, Node.js y más.">
+    <title>GhandyP - Desarrollador Full-Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Mi Blog</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header y navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">GhandyP</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="theme-switcher">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <div class="container">
-    <main>
-      <article>
-        <h2>Título de la Entrada</h2>
-        <p class="meta">Publicado el 1 de Enero de 2025</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#">Leer más</a>
-      </article>
-      
-      <article>
-        <h2>Otra Entrada de Blog</h2>
-        <p class="meta">Publicado el 15 de Enero de 2025</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#">Leer más</a>
-      </article>
-    </main>
-    
-    <aside>
-      <div class="widget">
-        <h3>Acerca de mí</h3>
-        <p>Breve descripción sobre mí y el blog.</p>
-      </div>
-      <div class="widget">
-        <h3>Categorías</h3>
-        <ul>
-          <li><a href="#">Tecnología</a></li>
-          <li><a href="#">Vida</a></li>
-          <li><a href="#">Viajes</a></li>
-        </ul>
-      </div>
-    </aside>
-  </div>
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hola, soy GhandyP</h1>
+                <h2>Desarrollador Full-Stack | Creador de Experiencias Web Modernas</h2>
+                <p>Convierto ideas en aplicaciones web robustas y escalables. Me especializo en el ecosistema de JavaScript, construyendo interfaces de usuario interactivas y APIs eficientes.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
-  </footer>
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Desde que escribí mi primera línea de código, me fascinó la capacidad de transformar ideas en realidad digital. Con una base sólida en desarrollo tanto frontend como backend, disfruto construyendo aplicaciones completas, desde la base de datos hasta la interfaz final.</p>
+                    <p>Creo firmemente en el código limpio, las pruebas automatizadas y la mejora continua. Me encanta colaborar en equipo para resolver problemas complejos y siempre estoy explorando nuevas tecnologías para perfeccionar mi trabajo y compartirlo con la comunidad.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Años de Experiencia</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Proyectos Completados</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Tecnologías Diversas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-image-large">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Mis Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>
+                            <span>HTML5</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="90"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>CSS3</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="85"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="80"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>React</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="75"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Vue.js</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="70"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>
+                            <span>Node.js</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="80"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Python</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="75"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>PHP</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="70"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>SQL</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="85"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>MongoDB</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="65"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Herramientas & Otros</h3>
+                    <ul>
+                        <li>
+                            <span>Git & GitHub</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="95"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Docker</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="70"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>AWS</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="60"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Firebase</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="75"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Linux</span>
+                            <div class="progress-bar">
+                                <div class="progress-level" data-level="85"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Zenith eCommerce</h3>
+                    <p>Plataforma de comercio electrónico de alto rendimiento con búsqueda de productos en tiempo real, pasarela de pago y un panel de administración completo.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/ghandyp/zenith-ecommerce" class="project-link" target="_blank" rel="noopener noreferrer">Ver en GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>TaskFlow Pro</h3>
+                    <p>Aplicación colaborativa de gestión de tareas con tableros Kanban, notificaciones en tiempo real y asignación de responsabilidades de equipo.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">GraphQL</span>
+                    </div>
+                   <a href="https://github.com/ghandyp/taskflow-pro" class="project-link" target="_blank" rel="noopener noreferrer">Ver en GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>DataViz Insights</h3>
+                    <p>Dashboard interactivo para la visualización de datos de negocio, consumiendo una API REST para generar gráficos y reportes dinámicos.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">Python/FastAPI</span>
+                    </div>
+                    <a href="https://github.com/ghandyp/dataviz-insights" class="project-link" target="_blank" rel="noopener noreferrer">Ver en GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Blog -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Últimas Entradas del Blog</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <h3>Desplegando Apps de Node.js con Docker y Nginx</h3>
+                        <p class="blog-meta">Publicado el 02 de Junio, 2025</p>
+                        <p>Una guía paso a paso para contenerizar una aplicación de Node.js y servirla de forma segura con un reverse proxy de Nginx.</p>
+                        <a href="blog/despliegue-docker-nginx.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <h3>State Management en React: De Redux a Zustand</h3>
+                        <p class="blog-meta">Publicado el 18 de Mayo, 2025</p>
+                        <p>Un análisis comparativo de las bibliotecas de manejo de estado más populares en React, y por qué Zustand está ganando terreno.</p>
+                        <a href="blog/react-zustand.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <h3>Creando APIs Robustas con FastAPI y Python</h3>
+                        <p class="blog-meta">Publicado el 29 de Abril, 2025</p>
+                        <p>Descubre cómo aprovechar la velocidad y la validación de datos de FastAPI para construir APIs de alto rendimiento en Python.</p>
+                        <a href="blog/python-fastapi.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contáctame</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>Puedes contactarme a través de cualquiera de estos canales:</p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contacto@ghandyp.dev</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <span>github.com/ghandyp</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>linkedin.com/in/ghandyp</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                            <span>@ghandyp_dev</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>GhandyP</h4>
+                    <p>Desarrollador profesional apasionado por la tecnología y la creación de soluciones digitales innovadoras.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> GhandyP. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
