@@ -3,12 +3,17 @@
  * Handles: Theme toggle, Mobile menu, Scroll animations, Form validation
  */
 
+document.documentElement.classList.add('js');
+
 document.addEventListener('DOMContentLoaded', () => {
+    addFadeInTargets();
     initThemeToggle();
     initMobileMenu();
     initScrollAnimations();
     initSmoothScroll();
     initSkillBars();
+    initActiveNavHighlight();
+    initContactForm();
 });
 
 /**
@@ -100,6 +105,13 @@ function initScrollAnimations() {
         rootMargin: '0px',
         threshold: 0.1
     };
+    
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.fade-in, .section-title').forEach(el => {
+            el.classList.add('visible');
+        });
+        return;
+    }
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -250,18 +262,11 @@ function initContactForm() {
 /**
  * Add fade-in class to elements that should animate
  */
-document.addEventListener('DOMContentLoaded', () => {
-    // Add fade-in to sections
+function addFadeInTargets() {
     document.querySelectorAll('.about-content, .timeline, .skills-grid, .cert-grid, .projects-grid, .contact-content').forEach(el => {
         el.classList.add('fade-in');
     });
-    
-    // Initialize active nav highlight
-    initActiveNavHighlight();
-    
-    // Initialize contact form
-    initContactForm();
-});
+}
 
 /**
  * Keyboard Navigation Support
