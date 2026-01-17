@@ -1,300 +1,282 @@
-// script.js - Funcionalidades adicionales para la página
+/**
+ * Martin Ghandy Prieto - Portfolio JavaScript
+ * Handles: Theme toggle, Mobile menu, Scroll animations, Form validation
+ */
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Funcionalidad del menú hamburguesa
+document.addEventListener('DOMContentLoaded', () => {
+    initThemeToggle();
+    initMobileMenu();
+    initScrollAnimations();
+    initSmoothScroll();
+    initSkillBars();
+});
+
+/**
+ * Theme Toggle - Dark/Light Mode
+ */
+function initThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    // Get saved theme or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Apply saved theme
+    if (savedTheme) {
+        html.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+    } else if (prefersDark) {
+        html.setAttribute('data-theme', 'dark');
+        updateThemeIcon('dark');
+    }
+    
+    // Toggle on click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme') || 'light';
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    }
+    
+    function updateThemeIcon(theme) {
+        if (!themeToggle) return;
+        
+        const icon = themeToggle.querySelector('i');
+        if (theme === 'dark') {
+            icon.className = 'fas fa-sun';
+            themeToggle.setAttribute('aria-label', 'Switch to light mode');
+        } else {
+            icon.className = 'fas fa-moon';
+            themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+        }
+    }
+}
+
+/**
+ * Mobile Menu Toggle
+ */
+function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
-
+    
     if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
+        hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active'));
         });
-
-        // Cerrar el menú al hacer clic en un enlace
-        document.querySelectorAll('.nav-link').forEach(link => {
+        
+        // Close menu on link click
+        navMenu.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
+        
+        // Close menu on outside click
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
     }
+}
 
-    // Funcionalidad de anclaje suave para navegación
+/**
+ * Scroll Animations - Fade in elements
+ */
+function initScrollAnimations() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Observe elements with fade-in class
+    document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+    });
+    
+    // Observe section titles
+    document.querySelectorAll('.section-title').forEach(el => {
+        observer.observe(el);
+    });
+}
+
+/**
+ * Smooth Scroll for Anchor Links
+ */
+function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            
             e.preventDefault();
+            const target = document.querySelector(href);
             
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80, // Compensar el header fijo
+                    top: offsetPosition,
                     behavior: 'smooth'
                 });
             }
         });
     });
+}
 
-    // Animaciones al hacer scroll
+/**
+ * Skill Bars Animation
+ */
+function initSkillBars() {
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
     };
-
-    const observer = new IntersectionObserver(function(entries) {
+    
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in-up');
-                
-                // Animar las barras de progreso en la sección de habilidades
-                if (entry.target.classList.contains('skills-container')) {
-                    animateProgressBars();
-                }
+                const levelBars = entry.target.querySelectorAll('.level-bar');
+                levelBars.forEach(bar => {
+                    const level = bar.style.getPropertyValue('--level');
+                    bar.style.width = '0';
+                    setTimeout(() => {
+                        bar.style.width = level;
+                    }, 100);
+                });
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
-
-    // Observar elementos para animaciones
-    document.querySelectorAll('.about-content, .skills-container, .projects-grid, .blog-grid, .contact-container').forEach(el => {
-        observer.observe(el);
+    
+    // Observe skill cards
+    document.querySelectorAll('.skill-card').forEach(card => {
+        observer.observe(card);
     });
+}
 
-    // Función para animar las barras de progreso
-    function animateProgressBars() {
-        const progressBars = document.querySelectorAll('.progress-level');
-        progressBars.forEach(bar => {
-            const level = bar.getAttribute('data-level');
-            // Establecer la variable CSS para la animación
-            bar.style.setProperty('--level', level + '%');
-            setTimeout(() => {
-                bar.style.width = level + '%';
-            }, 300); // Pequeño retraso para asegurar la animación
-        });
-    }
-
-    // Agregar efecto de animación en la sección hero
-    const heroContent = document.querySelector('.hero-content');
-    if (heroContent) {
-        setTimeout(() => {
-            heroContent.classList.add('fade-in-up');
-        }, 300);
-    }
-
-    const heroImage = document.querySelector('.hero-image');
-    if (heroImage) {
-        setTimeout(() => {
-            heroImage.classList.add('fade-in-up', 'delay-1');
-        }, 500);
-    }
-
-        // Efecto de escritura en el título de la sección hero
-
-        const heroTitle = document.querySelector('.hero-content h1');
-
-        if (heroTitle) {
-
-            const originalText = heroTitle.textContent;
-
-            heroTitle.textContent = '';
-
+/**
+ * Active Navigation Highlight
+ */
+function initActiveNavHighlight() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
             
-
-            let i = 0;
-
-            const typingEffect = setInterval(() => {
-
-                if (i < originalText.length) {
-
-                    heroTitle.textContent += originalText.charAt(i);
-
-                    i++;
-
-                } else {
-
-                    clearInterval(typingEffect);
-
-                }
-
-            }, 100);
-
-        }
-
-    
-
-            // Actualizar el año del copyright automáticamente
-
-    
-
-            const yearSpan = document.getElementById('current-year');
-
-    
-
-            if (yearSpan) {
-
-    
-
-                yearSpan.textContent = new Date().getFullYear();
-
-    
-
+            if (window.scrollY >= sectionTop - 100) {
+                current = section.getAttribute('id');
             }
-
-    
-
-        
-
-    
-
-            // Lógica del Theme Switcher (Modo Oscuro)
-
-    
-
-            const themeToggle = document.getElementById('theme-toggle');
-
-    
-
-            const htmlEl = document.documentElement;
-
-    
-
-            const moonIcon = '<i class="fas fa-moon"></i>';
-
-    
-
-            const sunIcon = '<i class="fas fa-sun"></i>';
-
-    
-
-        
-
-    
-
-            // Función para cambiar el tema
-
-    
-
-            function switchTheme(theme) {
-
-    
-
-                htmlEl.setAttribute('data-theme', theme);
-
-    
-
-                localStorage.setItem('theme', theme);
-
-    
-
-                if (theme === 'dark') {
-
-    
-
-                    themeToggle.innerHTML = sunIcon;
-
-    
-
-                    themeToggle.setAttribute('aria-label', 'Switch to light mode');
-
-    
-
-                } else {
-
-    
-
-                    themeToggle.innerHTML = moonIcon;
-
-    
-
-                    themeToggle.setAttribute('aria-label', 'Switch to dark mode');
-
-    
-
-                }
-
-    
-
-            }
-
-    
-
-        
-
-    
-
-            // Evento al hacer clic en el botón
-
-    
-
-            themeToggle.addEventListener('click', () => {
-
-    
-
-                const currentTheme = htmlEl.getAttribute('data-theme') || 'light';
-
-    
-
-                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-    
-
-                switchTheme(newTheme);
-
-    
-
-            });
-
-    
-
-        
-
-    
-
-            // Cargar el tema guardado o preferido por el sistema
-
-    
-
-            const savedTheme = localStorage.getItem('theme');
-
-    
-
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    
-
-        
-
-    
-
-            if (savedTheme) {
-
-    
-
-                switchTheme(savedTheme);
-
-    
-
-            } else if (prefersDark) {
-
-    
-
-                switchTheme('dark');
-
-    
-
-            }
-
-    
-
         });
-
-// Función para detectar si el usuario está en un dispositivo móvil
-function isMobile() {
-    return window.innerWidth <= 768;
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
 }
 
-// Ajustes para móviles
-if (isMobile()) {
-    // Ajustes específicos para móviles si es necesario
+/**
+ * Contact Form Handler
+ */
+function initContactForm() {
+    const form = document.querySelector('.contact-form');
+    
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                alert('Message sent successfully!');
+                form.reset();
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            alert('Error sending message. Please try again or email directly.');
+        } finally {
+
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
 }
+
+/**
+ * Add fade-in class to elements that should animate
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    // Add fade-in to sections
+    document.querySelectorAll('.about-content, .timeline, .skills-grid, .cert-grid, .projects-grid, .contact-content').forEach(el => {
+        el.classList.add('fade-in');
+    });
+    
+    // Initialize active nav highlight
+    initActiveNavHighlight();
+    
+    // Initialize contact form
+    initContactForm();
+});
+
+/**
+ * Keyboard Navigation Support
+ */
+document.addEventListener('keydown', (e) => {
+    // ESC to close mobile menu
+    if (e.key === 'Escape') {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (hamburger && navMenu && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.focus();
+        }
+    }
+});

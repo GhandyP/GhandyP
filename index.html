@@ -1,407 +1,582 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de GhandyP, Desarrollador Full-Stack especializado en la creación de aplicaciones web modernas y robustas con JavaScript, React, Node.js y más.">
-    <title>GhandyP - Desarrollador Full-Stack</title>
+    <meta name="description" content="Martin Ghandy Prieto - Infrastructure & Middleware Specialist, DevSecOps Engineer, Cloud Infrastructure Architect. Expert in Terraform, AWS, Docker/Kubernetes, Nginx, and observability for critical environments.">
+    <meta name="author" content="Martin Ghandy Prieto">
+    <meta name="theme-color" content="#FAFAFA">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Martin Ghandy Prieto | Infrastructure & DevOps Engineer">
+    <meta property="og:description" content="Infrastructure & Middleware Specialist, DevSecOps Engineer, Cloud Infrastructure Architect. Terraform, AWS, Docker/Kubernetes, Nginx, observability for critical environments.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghandyp.github.io">
+    <meta property="og:image" content="https://ghandyp.github.io/assets/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Martin Ghandy Prieto | DevOps Engineer">
+    <meta name="twitter:description" content="Infrastructure & Middleware Specialist. DevSecOps Engineer. Terraform, AWS, Docker/Kubernetes, Observability.">
+    
+    <title>Martin Ghandy Prieto | Infrastructure & DevOps Engineer</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Martin Ghandy Prieto",
+        "jobTitle": "Infrastructure & Middleware Specialist | DevSecOps Engineer | Cloud Infrastructure Architect",
+        "url": "https://ghandyp.github.io",
+        "sameAs": [
+            "https://github.com/GhandyP",
+            "https://linkedin.com/in/martin-prieto-564253a9"
+        ],
+        "knowsAbout": [
+            "Terraform",
+            "AWS",
+            "Docker",
+            "Kubernetes",
+            "Nginx",
+            "PostgreSQL",
+            "Prometheus",
+            "GitHub Actions",
+            "DevSecOps",
+            "Infrastructure as Code"
+        ],
+        "description": "Infrastructure & DevOps Engineer specializing in cloud infrastructure, automation, and observability."
+    }
+    </script>
 </head>
 <body>
-    <!-- Header y navegación -->
-    <header>
-        <nav class="navbar">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
             <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="#home">GhandyP</a>
-                </div>
+                <a href="#" class="nav-logo">Martin Ghandy Prieto</a>
                 <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contacto</a>
-                    </li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-                <div class="theme-switcher">
-                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to dark mode">
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
                         <i class="fas fa-moon"></i>
                     </button>
-                </div>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Sección Hero -->
-    <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Hola, soy GhandyP</h1>
-                <h2>Desarrollador Full-Stack | Creador de Experiencias Web Modernas</h2>
-                <p>Convierto ideas en aplicaciones web robustas y escalables. Me especializo en el ecosistema de JavaScript, construyendo interfaces de usuario interactivas y APIs eficientes.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-                    <a href="#contact" class="btn btn-secondary">Contáctame</a>
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Martin Ghandy Prieto</h1>
+                <h2 class="hero-subtitle">Infrastructure & Middleware Specialist | DevSecOps Engineer | Cloud Infrastructure Architect</h2>
+                <p class="hero-description">I build resilient, secure, and scalable server infrastructure for critical environments. Expert in Terraform, AWS, Docker/Kubernetes, middleware engineering, and observability. Focused on 99.95%+ uptime and production-ready deployments.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/GhandyP" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/martin-prieto-564253a9" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:info@gandyit.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-circle">
-                    <i class="fas fa-user-circle"></i>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">infrastructure.tf</span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">module</span> <span class="string">"aws_infrastructure"</span> {
+  source  <span class="operator">=</span> <span class="string">"./modules/aws"</span>
+  version <span class="operator">=</span> <span class="string">"2.1.0"</span>
+
+  <span class="property">vpc_id</span>     <span class="operator">=</span> module.vpc.vpc_id
+  <span class="property">environment</span> <span class="operator">=</span> <span class="string">"production"</span>
+  <span class="property">enable_monitoring</span> <span class="operator">=</span> <span class="boolean">true</span>
+}
+
+<span class="comment"># Infrastructure as Code ✓</span></code></pre>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Sobre Mí -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>Sobre Mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Desde que escribí mi primera línea de código, me fascinó la capacidad de transformar ideas en realidad digital. Con una base sólida en desarrollo tanto frontend como backend, disfruto construyendo aplicaciones completas, desde la base de datos hasta la interfaz final.</p>
-                    <p>Creo firmemente en el código limpio, las pruebas automatizadas y la mejora continua. Me encanta colaborar en equipo para resolver problemas complejos y siempre estoy explorando nuevas tecnologías para perfeccionar mi trabajo y compartirlo con la comunidad.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Años de Experiencia</p>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-lead">Infrastructure specialist with 5+ years designing, implementing, and maintaining critical on-premise and hybrid cloud architectures.</p>
+                    <p>I focus on provisioning, middleware configuration, orchestration, and CI/CD automation to guarantee uptime, security, and performance in financial, insurance, and enterprise environments. My approach blends Infrastructure as Code, security-first practices, and observability to build production-ready, resilient systems that scale.</p>
+                    <p class="about-stack">Core Stack: Terraform, Docker/Kubernetes, AWS/On-Premise, Nginx/Apache/Tomcat, Linux/Windows Server, Prometheus, GitHub Actions, PostgreSQL, Python.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>99.95%+ Uptime Achieved</span>
                         </div>
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Proyectos Completados</p>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Production-Ready Deployments</span>
                         </div>
-                        <div class="stat">
-                            <h3>15+</h3>
-                            <p>Tecnologías Diversas</p>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Security-First Approach</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="profile-image-large">
-                        <i class="fas fa-user"></i>
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="profile-info">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Maracay, Venezuela (Available for Caracas)</span>
+                            <span class="availability"><i class="fas fa-circle"></i> Remote, On-site Caracas, Contract or Full-time</span>
+                            <span class="notice"><i class="fas fa-clock"></i> Notice period: 2 weeks</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Habilidades -->
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Infrastructure & DevSecOps Engineer</h3>
+                            <span class="company">Financial Company (Remote)</span>
+                        </div>
+                        <span class="timeline-date">August 2024 – November 2025</span>
+                        <ul class="timeline-details">
+                            <li>Designed and built complete AWS server infrastructure from scratch: multi-tier VPC, public/private subnets, security groups, NACLs, ECS Fargate clusters, RDS PostgreSQL with automated backups, encrypted S3 buckets</li>
+                            <li>Implemented Infrastructure as Code with Terraform and Terragrunt: reusable modules for provisioning, ALB/NLB load balancers, auto-scaling groups, and 100% reproducibility</li>
+                            <li>Configured critical middleware services: Nginx reverse proxy with SSL/TLS, Tomcat application servers, PostgreSQL replication with automatic failover, Redis cache layers</li>
+                            <li>Automated end-to-end deployments using GitHub Actions: CI/CD pipelines, security scanning (Trivy, Snyk), blue-green deployment, and automatic rollbacks</li>
+                            <li>Built enterprise observability with Prometheus + Grafana: 40+ custom dashboards, intelligent alerting rules, PagerDuty integration, SLA monitoring</li>
+                            <li>Implemented security hardening: WAF rules, SSH key management, secrets rotation with AWS Secrets Manager, compliance scanning</li>
+                            <li>Maintained 99.95%+ uptime through 24/7 monitoring, automated health checks, incident response runbooks, and disaster recovery procedures</li>
+                        </ul>
+                        <div class="timeline-stack">
+                            <span class="tag">Terraform</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Nginx</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">GitHub Actions</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst</h3>
+                            <span class="company">Cruz Roja Venezolana (Volunteer, Remote)</span>
+                        </div>
+                        <span class="timeline-date">January 2023 – Present</span>
+                        <ul class="timeline-details">
+                            <li>Administered PostgreSQL infrastructure: automated backups, performance monitoring, connectivity troubleshooting, and availability checks</li>
+                            <li>Designed ETL pipelines: Bash and Python scripts for batch processing, job scheduling, and centralized logging</li>
+                            <li>Implemented observability and monitoring: automated health checks, Telegram alerts for critical issues, incident reporting</li>
+                        </ul>
+                        <div class="timeline-stack">
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Bash</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Strategic Data Analyst</h3>
+                            <span class="company">Publishart (Co-founder, Hybrid)</span>
+                        </div>
+                        <span class="timeline-date">January 2023 – August 2023</span>
+                        <ul class="timeline-details">
+                            <li>Managed application infrastructure: deployment and maintenance on virtual servers, reverse proxy configuration, resource monitoring (CPU, memory, disk)</li>
+                            <li>Administered middleware: Nginx load balancing, rewrite rules, SSL/TLS certificate management</li>
+                            <li>Automated operational processes: backup scripts, health checks, log rotation, security patches</li>
+                        </ul>
+                        <div class="timeline-stack">
+                            <span class="tag">Nginx</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Mis Habilidades</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>
-                            <span>HTML5</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="90"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>CSS3</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="85"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>JavaScript</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="80"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>React</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="75"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>Vue.js</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="70"></div>
-                            </div>
-                        </li>
-                    </ul>
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Server Infrastructure</h3>
+                    <p>Terraform provisioning, AWS/On-Premise, load balancers (ALB/NLB), auto-scaling, disaster recovery, HA architecture, IAM, security groups.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 95%"></div>
+                    </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>
-                            <span>Node.js</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="80"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>Python</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="75"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>PHP</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="70"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>SQL</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="85"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>MongoDB</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="65"></div>
-                            </div>
-                        </li>
-                    </ul>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Middleware & Web Servers</h3>
+                    <p>Nginx (advanced), Apache, Tomcat, SSL/TLS, reverse proxy, load balancing, request rewrite, security rules, performance tuning.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 95%"></div>
+                    </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Herramientas & Otros</h3>
-                    <ul>
-                        <li>
-                            <span>Git & GitHub</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="95"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>Docker</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="70"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>AWS</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="60"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>Firebase</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="75"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <span>Linux</span>
-                            <div class="progress-bar">
-                                <div class="progress-level" data-level="85"></div>
-                            </div>
-                        </li>
-                    </ul>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Observability & Monitoring</h3>
+                    <p>Prometheus, Grafana, CloudWatch, custom alerts, SLA/SLO definition, incident response, enterprise dashboards.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>DevSecOps & CI/CD</h3>
+                    <p>GitHub Actions pipelines, Infrastructure as Code, security scanning, automated testing, blue-green deployments, rollback procedures.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Administration</h3>
+                    <p>PostgreSQL replication, failover, backup strategies, RDS management, performance tuning, data migration.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>Linux & Automation</h3>
+                    <p>Ubuntu, RHEL, systemd, networking, troubleshooting, SSH management, Bash/Python automation, cron jobs.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="--level: 95%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h3>Technical Stack</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Terraform</span>
+                    <span class="tech-tag">Terragrunt</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">On-Premise</span>
+                    <span class="tech-tag">Nginx</span>
+                    <span class="tech-tag">Apache</span>
+                    <span class="tech-tag">Tomcat</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Prometheus</span>
+                    <span class="tech-tag">Grafana</span>
+                    <span class="tech-tag">CloudWatch</span>
+                    <span class="tech-tag">GitHub Actions</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Windows Server</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Bash</span>
+                    <span class="tech-tag">HCL</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Vultr</span>
+                    <span class="tech-tag">Let's Encrypt</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Proyectos -->
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Introduction to Transformer-Based NLP</h3>
+                    <p class="cert-issuer">NVIDIA Deep Learning Institute</p>
+                    <p class="cert-date">February 2025</p>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity Essentials & Networking</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-date">2022 - Present</p>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>We Secure - Cybersecurity & Linux Hardening</h3>
+                    <p class="cert-issuer">We Secure</p>
+                    <p class="cert-date">2023 - 2024</p>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning with Scikit-learn</h3>
+                    <p class="cert-issuer">Inria (France)</p>
+                    <p class="cert-date">January 2024</p>
+                </div>
+
+                <div class="cert-card in-progress">
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>AWS Solutions Architect Associate</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">In Progress</p>
+                </div>
+
+                <div class="cert-card in-progress">
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Linux Professional Institute (LPIC-1)</h3>
+                    <p class="cert-issuer">Linux Professional Institute</p>
+                    <p class="cert-date">In Progress</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Proyectos Destacados</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-shopping-cart"></i>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="View details"><i class="fas fa-link"></i></a>
+                        </div>
                     </div>
-                    <h3>Zenith eCommerce</h3>
-                    <p>Plataforma de comercio electrónico de alto rendimiento con búsqueda de productos en tiempo real, pasarela de pago y un panel de administración completo.</p>
+                    <h3>Financial Cloud Infrastructure</h3>
+                    <p>End-to-end AWS infrastructure built from scratch: multi-tier VPC, ECS Fargate clusters, encrypted S3, RDS PostgreSQL with automated backups, and IaC with Terraform/Terragrunt.</p>
                     <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">PostgreSQL</span>
+                        <span>Terraform</span>
+                        <span>AWS</span>
+                        <span>Terragrunt</span>
+                        <span>PostgreSQL</span>
                     </div>
-                    <a href="https://github.com/ghandyp/zenith-ecommerce" class="project-link" target="_blank" rel="noopener noreferrer">Ver en GitHub <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-tasks"></i>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="View details"><i class="fas fa-link"></i></a>
+                        </div>
                     </div>
-                    <h3>TaskFlow Pro</h3>
-                    <p>Aplicación colaborativa de gestión de tareas con tableros Kanban, notificaciones en tiempo real y asignación de responsabilidades de equipo.</p>
+                    <h3>Self-Hosted Middleware Server</h3>
+                    <p>Vultr server handling critical applications with 99.95% uptime. Nginx reverse proxy, Docker isolation, PostgreSQL replication, and automated security patching.</p>
                     <div class="project-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">GraphQL</span>
+                        <span>Nginx</span>
+                        <span>Docker</span>
+                        <span>PostgreSQL</span>
+                        <span>Vultr</span>
                     </div>
-                   <a href="https://github.com/ghandyp/taskflow-pro" class="project-link" target="_blank" rel="noopener noreferrer">Ver en GitHub <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-pie"></i>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="View details"><i class="fas fa-link"></i></a>
+                        </div>
                     </div>
-                    <h3>DataViz Insights</h3>
-                    <p>Dashboard interactivo para la visualización de datos de negocio, consumiendo una API REST para generar gráficos y reportes dinámicos.</p>
+                    <h3>Observability & Incident Response</h3>
+                    <p>Prometheus + Grafana observability stack with 40+ custom dashboards, alerting rules, and PagerDuty integration for SLA monitoring.</p>
                     <div class="project-tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">D3.js</span>
-                        <span class="tag">Python/FastAPI</span>
+                        <span>Prometheus</span>
+                        <span>Grafana</span>
+                        <span>Alerting</span>
                     </div>
-                    <a href="https://github.com/ghandyp/dataviz-insights" class="project-link" target="_blank" rel="noopener noreferrer">Ver en GitHub <i class="fas fa-external-link-alt"></i></a>
-                </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" aria-label="View details"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <h3>Security Hardening Program</h3>
+                    <p>Infrastructure security hardening with WAF rules, SSH key management, secrets rotation, compliance scanning, and automated incident runbooks.</p>
+                    <div class="project-tags">
+                        <span>WAF</span>
+                        <span>Secrets Manager</span>
+                        <span>Security</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Sección Blog -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2>Últimas Entradas del Blog</h2>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-content">
-                        <h3>Desplegando Apps de Node.js con Docker y Nginx</h3>
-                        <p class="blog-meta">Publicado el 02 de Junio, 2025</p>
-                        <p>Una guía paso a paso para contenerizar una aplicación de Node.js y servirla de forma segura con un reverse proxy de Nginx.</p>
-                        <a href="blog/despliegue-docker-nginx.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                
-                <article class="blog-card">
-                    <div class="blog-content">
-                        <h3>State Management en React: De Redux a Zustand</h3>
-                        <p class="blog-meta">Publicado el 18 de Mayo, 2025</p>
-                        <p>Un análisis comparativo de las bibliotecas de manejo de estado más populares en React, y por qué Zustand está ganando terreno.</p>
-                        <a href="blog/react-zustand.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                
-                <article class="blog-card">
-                    <div class="blog-content">
-                        <h3>Creando APIs Robustas con FastAPI y Python</h3>
-                        <p class="blog-meta">Publicado el 29 de Abril, 2025</p>
-                        <p>Descubre cómo aprovechar la velocidad y la validación de datos de FastAPI para construir APIs de alto rendimiento en Python.</p>
-                        <a href="blog/python-fastapi.html" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Contacto -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contáctame</h2>
-            <div class="contact-container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Información de Contacto</h3>
-                    <p>Puedes contactarme a través de cualquiera de estos canales:</p>
-                    <ul class="contact-list">
-                        <li>
+                    <p>Available for remote work or on-site roles in Caracas. Open to full-time or contract opportunities with a two-week notice period.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>contacto@ghandyp.dev</span>
-                        </li>
-                        <li>
+                            <a href="mailto:info@gandyit.com">info@gandyit.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+58 424 334 4545</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Maracay, Venezuela (Available for Caracas)</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/GhandyP" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
-                            <span>github.com/ghandyp</span>
-                        </li>
-                        <li>
-                            <i class="fab fa-linkedin-in"></i>
-                            <span>linkedin.com/in/ghandyp</span>
-                        </li>
-                        <li>
-                            <i class="fab fa-twitter"></i>
-                            <span>@ghandyp_dev</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="social-links">
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </a>
+                        <a href="https://linkedin.com/in/martin-prieto-564253a9" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="language-block">
+                        <h3>Languages</h3>
+                        <p>Spanish (Native) · English (Technical Advanced, B2-C1)</p>
+                    </div>
+                    <div class="sector-block">
+                        <h3>Target Sectors</h3>
+                        <p>Insurance, Finance, Telecommunications, Energy</p>
                     </div>
                 </div>
-                
-                <form class="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                     <div class="form-group">
-                        <label for="name">Nombre</label>
+                        <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    
                     <div class="form-group">
-                        <label for="message">Mensaje</label>
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="job">Job Opportunity</option>
+                            <option value="project">Project Inquiry</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-about">
-                    <h4>GhandyP</h4>
-                    <p>Desarrollador profesional apasionado por la tecnología y la creación de soluciones digitales innovadoras.</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#about">Sobre Mí</a></li>
-                        <li><a href="#skills">Habilidades</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-social">
-                    <h4>Redes Sociales</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> GhandyP. Todos los derechos reservados.</p>
+                <p class="footer-text">Built with plain HTML/CSS/JS for GitHub Pages</p>
+                <p class="footer-copyright">&copy; 2025 Martin Ghandy Prieto Rodriguez. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

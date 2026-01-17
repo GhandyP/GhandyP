@@ -1,0 +1,10 @@
+# Robots.txt for Martin Ghandy Prieto Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ghandyp.github.io/sitemap.xml
+
+# Disallow admin/private directories
+Disallow: /.github/
+Disallow: /node_modules/
