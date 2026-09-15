@@ -3,580 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Martin Ghandy Prieto Rodriguez - Infrastructure & Middleware Specialist, DevSecOps Engineer, Cloud Infrastructure Architect. Expert in Terraform, AWS, Docker/Kubernetes, Nginx, and observability for critical environments.">
+    <meta name="description" content="Martin Ghandy Prieto Rodriguez is an Infrastructure and DevOps Engineer working across cloud, automation, middleware, security, and observability.">
     <meta name="author" content="Martin Ghandy Prieto Rodriguez">
-    <meta name="theme-color" content="#FAFAFA">
-    
-    <!-- Open Graph -->
+    <meta name="theme-color" content="#f7f7f5">
     <meta property="og:title" content="Martin Ghandy Prieto Rodriguez | Infrastructure & DevOps Engineer">
-    <meta property="og:description" content="Infrastructure & Middleware Specialist, DevSecOps Engineer, Cloud Infrastructure Architect. Terraform, AWS, Docker/Kubernetes, Nginx, observability for critical environments.">
+    <meta property="og:description" content="Infrastructure, cloud, automation, middleware, security, and observability.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ghandyp.github.io">
-    <meta property="og:image" content="https://ghandyp.github.io/assets/og-image.png">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Martin Ghandy Prieto Rodriguez | DevOps Engineer">
-    <meta name="twitter:description" content="Infrastructure & Middleware Specialist. DevSecOps Engineer. Terraform, AWS, Docker/Kubernetes, Observability.">
-    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Martin Ghandy Prieto Rodriguez | Infrastructure & DevOps Engineer">
+    <meta name="twitter:description" content="Infrastructure, cloud, automation, middleware, security, and observability.">
     <title>Martin Ghandy Prieto Rodriguez | Infrastructure & DevOps Engineer</title>
-    
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- JSON-LD Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Martin Ghandy Prieto Rodriguez",
-        "jobTitle": "Infrastructure & Middleware Specialist | DevSecOps Engineer | Cloud Infrastructure Architect",
+        "jobTitle": "Infrastructure & DevOps Engineer",
         "url": "https://ghandyp.github.io",
-        "sameAs": [
-            "https://github.com/GhandyP",
-            "https://linkedin.com/in/martin-prieto-564253a9"
-        ],
-        "knowsAbout": [
-            "Terraform",
-            "AWS",
-            "Docker",
-            "Kubernetes",
-            "Nginx",
-            "PostgreSQL",
-            "Prometheus",
-            "GitHub Actions",
-            "DevSecOps",
-            "Infrastructure as Code"
-        ],
-        "description": "Infrastructure & DevOps Engineer specializing in cloud infrastructure, automation, and observability."
+        "sameAs": ["https://github.com/GhandyP", "https://linkedin.com/in/martin-prieto-564253a9"],
+        "knowsAbout": ["Terraform", "AWS", "Docker", "Kubernetes", "Nginx", "PostgreSQL", "Prometheus", "GitHub Actions", "DevSecOps", "Infrastructure as Code"]
     }
     </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <a href="#" class="nav-logo">Martin Ghandy Prieto Rodriguez</a>
-                <ul class="nav-menu">
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="hamburger" aria-label="Menu" aria-expanded="false">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a class="nav__logo" href="#top" aria-label="Go to homepage">MGP<span>.</span></a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Toggle navigation</span><span aria-hidden="true">☰</span>
+            </button>
+            <ul class="nav__menu" id="primary-menu">
+                <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#capabilities">Capabilities</a></li><li><a href="#learning">Learning</a></li><li><a href="#work">Selected work</a></li><li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">◐</button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-title">Martin Ghandy Prieto Rodriguez</h1>
-                <h2 class="hero-subtitle">Infrastructure & Middleware Specialist | DevSecOps Engineer | Cloud Infrastructure Architect</h2>
-                <p class="hero-description">I build resilient, secure, and scalable server infrastructure for critical environments. Expert in Terraform, AWS, Docker/Kubernetes, middleware engineering, and observability. Focused on 99.95%+ uptime and production-ready deployments.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    <main id="main-content">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="eyebrow">Infrastructure · Automation · Reliability</p>
+                    <h1 id="hero-title">Building calm, capable systems for critical work.</h1>
+                    <p class="hero__lede">I’m Martin Ghandy Prieto Rodriguez, an Infrastructure &amp; DevOps Engineer working across cloud, middleware, automation, security, and observability.</p>
+                    <div class="hero__actions"><a class="button button--solid" href="#work">Explore selected work</a><a class="button button--outline" href="mailto:info@gandyit.com">Start a conversation</a></div>
+                    <div class="hero__links" aria-label="Professional profiles"><a href="https://github.com/GhandyP" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/martin-prieto-564253a9" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
                 </div>
-                <div class="hero-social">
-                    <a href="https://github.com/GhandyP" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/martin-prieto-564253a9" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:info@gandyit.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+                <aside class="terminal" aria-label="Infrastructure principles">
+                    <div class="terminal__bar"><span aria-hidden="true">● ● ●</span><span>operating-principles.txt</span></div>
+                    <pre><code><span class="code-muted">01</span> repeatable_by_default: <span class="code-green">true</span>
+<span class="code-muted">02</span> security_in_the_design: <span class="code-green">true</span>
+<span class="code-muted">03</span> observable_in_production: <span class="code-green">true</span>
+<span class="code-muted">04</span> automation_over_drift: <span class="code-green">true</span>
+<span class="code-muted">05</span> documentation_is_delivery: <span class="code-green">true</span></code></pre>
+                </aside>
             </div>
-            <div class="hero-visual">
-                <div class="code-block">
-                    <div class="code-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="code-title">infrastructure.tf</span>
-                    </div>
-                    <pre class="code-content"><code><span class="keyword">module</span> <span class="string">"aws_infrastructure"</span> {
-  source  <span class="operator">=</span> <span class="string">"./modules/aws"</span>
-  version <span class="operator">=</span> <span class="string">"2.1.0"</span>
+        </section>
 
-  <span class="property">vpc_id</span>     <span class="operator">=</span> module.vpc.vpc_id
-  <span class="property">environment</span> <span class="operator">=</span> <span class="string">"production"</span>
-  <span class="property">enable_monitoring</span> <span class="operator">=</span> <span class="boolean">true</span>
-}
+        <section class="section section--tint" id="about" aria-labelledby="about-title"><div class="container split"><div><p class="eyebrow">A practical point of view</p><h2 id="about-title">Infrastructure is an engineering product.</h2></div><div class="prose"><p>My work spans on-premises and hybrid cloud environments, from provisioning and middleware configuration to delivery pipelines and incident response. I use Infrastructure as Code, security-first practices, and observability to make systems easier to operate and improve.</p><p>Based in Maracay, Venezuela, I’m available for remote work and on-site opportunities in Caracas. I’m open to full-time and contract roles.</p></div></div></section>
 
-<span class="comment"># Infrastructure as Code ✓</span></code></pre>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="section" id="capabilities" aria-labelledby="capabilities-title"><div class="container"><p class="eyebrow">How I contribute</p><h2 id="capabilities-title">Capabilities</h2><div class="card-grid card-grid--six">
+            <article class="card"><span class="card__number">01</span><h3>Cloud &amp; hybrid infrastructure</h3><p>AWS and on-premises environments, networking, IAM, load balancing, scaling, and resilient architecture.</p></article>
+            <article class="card"><span class="card__number">02</span><h3>Infrastructure as Code</h3><p>Reusable Terraform and Terragrunt modules for repeatable, reviewable provisioning.</p></article>
+            <article class="card"><span class="card__number">03</span><h3>Middleware engineering</h3><p>Nginx, Apache, Tomcat, SSL/TLS, reverse proxies, routing, and performance tuning.</p></article>
+            <article class="card"><span class="card__number">04</span><h3>Automation &amp; delivery</h3><p>Bash, Python, GitHub Actions, CI/CD workflows, testing, and operational runbooks.</p></article>
+            <article class="card"><span class="card__number">05</span><h3>Observability</h3><p>Prometheus, Grafana, CloudWatch, health checks, alerting, and incident response.</p></article>
+            <article class="card"><span class="card__number">06</span><h3>Data platforms &amp; security</h3><p>PostgreSQL administration, backups, replication, failover, hardening, and secrets management.</p></article>
+        </div><div class="stack"><h3>Technical stack</h3><p class="tags"><span>AWS</span><span>Terraform</span><span>Terragrunt</span><span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span><span>Redis</span><span>Prometheus</span><span>Grafana</span><span>Linux</span><span>Python</span><span>Bash</span><span>GitHub Actions</span><span>Nginx</span><span>Apache</span><span>Tomcat</span></p></div></div></section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="about-lead">Infrastructure specialist with 5+ years designing, implementing, and maintaining critical on-premise and hybrid cloud architectures.</p>
-                    <p>I focus on provisioning, middleware configuration, orchestration, and CI/CD automation to guarantee uptime, security, and performance in financial, insurance, and enterprise environments. My approach blends Infrastructure as Code, security-first practices, and observability to build production-ready, resilient systems that scale.</p>
-                    <p class="about-stack">Core Stack: Terraform, Docker/Kubernetes, AWS/On-Premise, Nginx/Apache/Tomcat, Linux/Windows Server, Prometheus, GitHub Actions, PostgreSQL, Python.</p>
-                    <div class="about-highlights">
-                        <div class="highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>99.95%+ Uptime Achieved</span>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Production-Ready Deployments</span>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Security-First Approach</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="profile-card">
-                        <div class="profile-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="profile-info">
-                            <span class="location"><i class="fas fa-map-marker-alt"></i> Maracay, Venezuela (Available for Caracas)</span>
-                            <span class="availability"><i class="fas fa-circle"></i> Remote, On-site Caracas, Contract or Full-time</span>
-                            <span class="notice"><i class="fas fa-clock"></i> Notice period: 2 weeks</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="section section--tint" id="experience" aria-labelledby="experience-title"><div class="container narrow"><p class="eyebrow">Selected experience</p><h2 id="experience-title">A record of hands-on operations.</h2><div class="experience-list">
+            <article class="experience-item"><p class="experience-item__date">August 2024 – November 2025</p><div><h3>Infrastructure &amp; DevSecOps Engineer</h3><p class="experience-item__org">Financial Company · Remote</p><p>AWS infrastructure, Terraform/Terragrunt, middleware, CI/CD, observability, and security hardening.</p></div></article>
+            <article class="experience-item"><p class="experience-item__date">January 2023 – Present</p><div><h3>Data Analyst</h3><p class="experience-item__org">Cruz Roja Venezolana · Volunteer, Remote</p><p>PostgreSQL administration, ETL automation, health checks, alerting, and incident reporting.</p></div></article>
+            <article class="experience-item"><p class="experience-item__date">January 2023 – August 2023</p><div><h3>Strategic Data Analyst</h3><p class="experience-item__org">Publishart · Co-founder, Hybrid</p><p>Virtual-server operations, Nginx, Docker, backups, monitoring, and security maintenance.</p></div></article>
+        </div></div></section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <article class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Infrastructure & DevSecOps Engineer</h3>
-                            <span class="company">Financial Company (Remote)</span>
-                        </div>
-                        <span class="timeline-date">August 2024 – November 2025</span>
-                        <ul class="timeline-details">
-                            <li>Designed and built complete AWS server infrastructure from scratch: multi-tier VPC, public/private subnets, security groups, NACLs, ECS Fargate clusters, RDS PostgreSQL with automated backups, encrypted S3 buckets</li>
-                            <li>Implemented Infrastructure as Code with Terraform and Terragrunt: reusable modules for provisioning, ALB/NLB load balancers, auto-scaling groups, and 100% reproducibility</li>
-                            <li>Configured critical middleware services: Nginx reverse proxy with SSL/TLS, Tomcat application servers, PostgreSQL replication with automatic failover, Redis cache layers</li>
-                            <li>Automated end-to-end deployments using GitHub Actions: CI/CD pipelines, security scanning (Trivy, Snyk), blue-green deployment, and automatic rollbacks</li>
-                            <li>Built enterprise observability with Prometheus + Grafana: 40+ custom dashboards, intelligent alerting rules, PagerDuty integration, SLA monitoring</li>
-                            <li>Implemented security hardening: WAF rules, SSH key management, secrets rotation with AWS Secrets Manager, compliance scanning</li>
-                            <li>Maintained 99.95%+ uptime through 24/7 monitoring, automated health checks, incident response runbooks, and disaster recovery procedures</li>
-                        </ul>
-                        <div class="timeline-stack">
-                            <span class="tag">Terraform</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">AWS</span>
-                            <span class="tag">Nginx</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">GitHub Actions</span>
-                        </div>
-                    </div>
-                </article>
+        <section class="section section--tint" id="learning" aria-labelledby="learning-title"><div class="container"><p class="eyebrow">Continuous learning</p><h2 id="learning-title">Certifications and study.</h2><div class="card-grid card-grid--four">
+                <article class="card"><h3>Introduction to Transformer-Based NLP</h3><p>NVIDIA Deep Learning Institute · February 2025</p></article>
+                <article class="card"><h3>Cybersecurity Essentials &amp; Networking</h3><p>Cisco Networking Academy · 2022 – Present</p></article>
+                <article class="card"><h3>Machine Learning with Scikit-learn</h3><p>Inria (France) · January 2024</p></article>
+                <article class="card"><h3>AWS Solutions Architect Associate</h3><p>In progress · Linux Professional Institute LPIC-1 also in progress.</p></article>
+            </div></div></section>
 
-                <article class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Analyst</h3>
-                            <span class="company">Cruz Roja Venezolana (Volunteer, Remote)</span>
-                        </div>
-                        <span class="timeline-date">January 2023 – Present</span>
-                        <ul class="timeline-details">
-                            <li>Administered PostgreSQL infrastructure: automated backups, performance monitoring, connectivity troubleshooting, and availability checks</li>
-                            <li>Designed ETL pipelines: Bash and Python scripts for batch processing, job scheduling, and centralized logging</li>
-                            <li>Implemented observability and monitoring: automated health checks, Telegram alerts for critical issues, incident reporting</li>
-                        </ul>
-                        <div class="timeline-stack">
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Linux</span>
-                            <span class="tag">Bash</span>
-                            <span class="tag">Python</span>
-                        </div>
-                    </div>
-                </article>
+            <section class="section" id="work" aria-labelledby="work-title"><div class="container"><p class="eyebrow">Selected work</p><h2 id="work-title">Systems designed for dependable operations.</h2><div class="card-grid card-grid--four">
+            <article class="work-card"><p class="work-card__type">Cloud infrastructure</p><h3>Financial cloud infrastructure</h3><p>AWS foundations including multi-tier networking, ECS Fargate, encrypted storage, RDS PostgreSQL, and Terraform/Terragrunt.</p><p class="tags"><span>AWS</span><span>Terraform</span><span>PostgreSQL</span></p></article>
+            <article class="work-card"><p class="work-card__type">Middleware</p><h3>Self-hosted middleware server</h3><p>Virtual-server operations with Nginx reverse proxy, Docker isolation, PostgreSQL, and automated maintenance.</p><p class="tags"><span>Nginx</span><span>Docker</span><span>Linux</span></p></article>
+            <article class="work-card"><p class="work-card__type">Observability</p><h3>Observability &amp; incident response</h3><p>Prometheus and Grafana monitoring with custom dashboards, alerting rules, and operational response practices.</p><p class="tags"><span>Prometheus</span><span>Grafana</span><span>Alerting</span></p></article>
+            <article class="work-card"><p class="work-card__type">Security</p><h3>Security hardening program</h3><p>Practical hardening through WAF rules, SSH key management, secrets rotation, scanning, and runbooks.</p><p class="tags"><span>Security</span><span>WAF</span><span>Automation</span></p></article>
+        </div><p class="private-note">Some work is private or belongs to client environments, so no public repository links are provided.</p></div></section>
 
-                <article class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Strategic Data Analyst</h3>
-                            <span class="company">Publishart (Co-founder, Hybrid)</span>
-                        </div>
-                        <span class="timeline-date">January 2023 – August 2023</span>
-                        <ul class="timeline-details">
-                            <li>Managed application infrastructure: deployment and maintenance on virtual servers, reverse proxy configuration, resource monitoring (CPU, memory, disk)</li>
-                            <li>Administered middleware: Nginx load balancing, rewrite rules, SSL/TLS certificate management</li>
-                            <li>Automated operational processes: backup scripts, health checks, log rotation, security patches</li>
-                        </ul>
-                        <div class="timeline-stack">
-                            <span class="tag">Nginx</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Linux</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Server Infrastructure</h3>
-                    <p>Terraform provisioning, AWS/On-Premise, load balancers (ALB/NLB), auto-scaling, disaster recovery, HA architecture, IAM, security groups.</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 95%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Middleware & Web Servers</h3>
-                    <p>Nginx (advanced), Apache, Tomcat, SSL/TLS, reverse proxy, load balancing, request rewrite, security rules, performance tuning.</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 95%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Observability & Monitoring</h3>
-                    <p>Prometheus, Grafana, CloudWatch, custom alerts, SLA/SLO definition, incident response, enterprise dashboards.</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 95%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-code-branch"></i>
-                    </div>
-                    <h3>DevSecOps & CI/CD</h3>
-                    <p>GitHub Actions pipelines, Infrastructure as Code, security scanning, automated testing, blue-green deployments, rollback procedures.</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 95%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Database Administration</h3>
-                    <p>PostgreSQL replication, failover, backup strategies, RDS management, performance tuning, data migration.</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 90%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-linux"></i>
-                    </div>
-                    <h3>Linux & Automation</h3>
-                    <p>Ubuntu, RHEL, systemd, networking, troubleshooting, SSH management, Bash/Python automation, cron jobs.</p>
-                    <div class="skill-level">
-                        <div class="level-bar" style="--level: 95%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-stack">
-                <h3>Technical Stack</h3>
-                <div class="tech-tags">
-                    <span class="tech-tag">Terraform</span>
-                    <span class="tech-tag">Terragrunt</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">Kubernetes</span>
-                    <span class="tech-tag">AWS</span>
-                    <span class="tech-tag">On-Premise</span>
-                    <span class="tech-tag">Nginx</span>
-                    <span class="tech-tag">Apache</span>
-                    <span class="tech-tag">Tomcat</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Redis</span>
-                    <span class="tech-tag">Prometheus</span>
-                    <span class="tech-tag">Grafana</span>
-                    <span class="tech-tag">CloudWatch</span>
-                    <span class="tech-tag">GitHub Actions</span>
-                    <span class="tech-tag">Linux</span>
-                    <span class="tech-tag">Windows Server</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Bash</span>
-                    <span class="tech-tag">HCL</span>
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">Vultr</span>
-                    <span class="tech-tag">Let's Encrypt</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <h3>Introduction to Transformer-Based NLP</h3>
-                    <p class="cert-issuer">NVIDIA Deep Learning Institute</p>
-                    <p class="cert-date">February 2025</p>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Cybersecurity Essentials & Networking</h3>
-                    <p class="cert-issuer">Cisco Networking Academy</p>
-                    <p class="cert-date">2022 - Present</p>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <h3>We Secure - Cybersecurity & Linux Hardening</h3>
-                    <p class="cert-issuer">We Secure</p>
-                    <p class="cert-date">2023 - 2024</p>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-badge">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Machine Learning with Scikit-learn</h3>
-                    <p class="cert-issuer">Inria (France)</p>
-                    <p class="cert-date">January 2024</p>
-                </div>
-
-                <div class="cert-card in-progress">
-                    <div class="cert-badge">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>AWS Solutions Architect Associate</h3>
-                    <p class="cert-issuer">Amazon Web Services</p>
-                    <p class="cert-date">In Progress</p>
-                </div>
-
-                <div class="cert-card in-progress">
-                    <div class="cert-badge">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Linux Professional Institute (LPIC-1)</h3>
-                    <p class="cert-issuer">Linux Professional Institute</p>
-                    <p class="cert-date">In Progress</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" aria-label="View details"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <h3>Financial Cloud Infrastructure</h3>
-                    <p>End-to-end AWS infrastructure built from scratch: multi-tier VPC, ECS Fargate clusters, encrypted S3, RDS PostgreSQL with automated backups, and IaC with Terraform/Terragrunt.</p>
-                    <div class="project-tags">
-                        <span>Terraform</span>
-                        <span>AWS</span>
-                        <span>Terragrunt</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" aria-label="View details"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <h3>Self-Hosted Middleware Server</h3>
-                    <p>Vultr server handling critical applications with 99.95% uptime. Nginx reverse proxy, Docker isolation, PostgreSQL replication, and automated security patching.</p>
-                    <div class="project-tags">
-                        <span>Nginx</span>
-                        <span>Docker</span>
-                        <span>PostgreSQL</span>
-                        <span>Vultr</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" aria-label="View details"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <h3>Observability & Incident Response</h3>
-                    <p>Prometheus + Grafana observability stack with 40+ custom dashboards, alerting rules, and PagerDuty integration for SLA monitoring.</p>
-                    <div class="project-tags">
-                        <span>Prometheus</span>
-                        <span>Grafana</span>
-                        <span>Alerting</span>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" aria-label="View details"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <h3>Security Hardening Program</h3>
-                    <p>Infrastructure security hardening with WAF rules, SSH key management, secrets rotation, compliance scanning, and automated incident runbooks.</p>
-                    <div class="project-tags">
-                        <span>WAF</span>
-                        <span>Secrets Manager</span>
-                        <span>Security</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p>Available for remote work or on-site roles in Caracas. Open to full-time or contract opportunities with a two-week notice period.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@gandyit.com">info@gandyit.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+58 424 334 4545</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Maracay, Venezuela (Available for Caracas)</span>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://github.com/GhandyP" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/martin-prieto-564253a9" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="language-block">
-                        <h3>Languages</h3>
-                        <p>Spanish (Native) · English (Technical Advanced, B2-C1)</p>
-                    </div>
-                    <div class="sector-block">
-                        <h3>Target Sectors</h3>
-                        <p>Insurance, Finance, Telecommunications, Energy</p>
-                    </div>
-                </div>
-                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Select a topic</option>
-                            <option value="job">Job Opportunity</option>
-                            <option value="project">Project Inquiry</option>
-                            <option value="consulting">Consulting</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text">Built with plain HTML/CSS/JS for GitHub Pages</p>
-                <p class="footer-copyright">&copy; 2025 Martin Ghandy Prieto Rodriguez Rodriguez. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+        <section class="section section--accent" id="contact" aria-labelledby="contact-title"><div class="container contact"><div><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Have an infrastructure challenge?</h2><p>Tell me what you’re building, operating, or trying to make more reliable.</p></div><div class="contact__actions"><a class="button button--solid" href="mailto:info@gandyit.com">info@gandyit.com</a><a class="text-link" href="tel:+584243344545">+58 424 334 4545</a><p>Maracay, Venezuela · Remote / Caracas</p><p>Spanish (Native) · English (Technical Advanced, B2-C1)</p><p>Insurance · Finance · Telecommunications · Energy</p><p>Two-week notice period</p></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container"><p>Built with plain HTML, CSS, and JavaScript for GitHub Pages.</p><p>© 2025 Martin Ghandy Prieto Rodriguez</p></div></footer>
     <script src="script.js"></script>
 </body>
 </html>
