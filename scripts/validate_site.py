@@ -15,7 +15,7 @@ from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 from urllib.parse import unquote, urlsplit
 
 
-CANONICAL_URL = "https://ghandyp.github.io/"
+CANONICAL_URL = "https://ghandyp.github.io/GhandyP/"
 CANONICAL_IMAGE_URL = f"{CANONICAL_URL}assets/og-image.png"
 IMAGE_DIMENSIONS = (1200, 630)
 

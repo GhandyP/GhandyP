@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ghandyp.github.io/"><strong>Explore the portfolio ↗</strong></a>
+  <a href="https://ghandyp.github.io/GhandyP/"><strong>Explore the portfolio ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/GhandyP">GitHub</a>
   &nbsp; · &nbsp;
@@ -82,7 +82,7 @@ Cloud architecture, Linux hardening, applied machine learning, transformer-based
 
 This repository contains the static portfolio: **HTML, CSS, and vanilla JavaScript** for GitHub Pages. The implementation details are secondary to the professional profile above.
 
-[Portfolio page](https://ghandyp.github.io/) · [Page structure](index.html) · [Styles](style.css) · [Interactions](script.js) · [Deployment workflow](.github/workflows/deploy.yml)
+[Portfolio page](https://ghandyp.github.io/GhandyP/) · [Page structure](index.html) · [Styles](style.css) · [Interactions](script.js) · [Deployment workflow](.github/workflows/deploy.yml)
 
 <p align="center">
   <strong>Let’s talk systems.</strong><br>
