@@ -27,6 +27,7 @@ SOURCE_FILES = (
     Path("sitemap.xml"),
     Path("README.md"),
     Path("assets/og-image.png"),
+    Path("assets/ghandyit-logo.svg"),
     Path("scripts/build-public-artifact.py"),
     Path("scripts/validate_site.py"),
 )
@@ -39,6 +40,7 @@ ARTIFACT_FILES = frozenset(
         "robots.txt",
         "sitemap.xml",
         "assets/og-image.png",
+        "assets/ghandyit-logo.svg",
         ".nojekyll",
     }
 )
@@ -49,6 +51,7 @@ REQUIRED_IDS = (
     "top",
     "about",
     "capabilities",
+    "services",
     "experience",
     "methods",
     "learning",

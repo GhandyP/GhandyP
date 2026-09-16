@@ -17,6 +17,7 @@ PUBLIC_FILES = (
     Path("robots.txt"),
     Path("sitemap.xml"),
     Path("assets/og-image.png"),
+    Path("assets/ghandyit-logo.svg"),
 )
 
 

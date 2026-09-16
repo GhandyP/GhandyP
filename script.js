@@ -1,4 +1,4 @@
-/** Small, dependency-free enhancements for the portfolio site. */
+/** Small, dependency-free progressive enhancements for the portfolio site. */
 
 const THEME_STORAGE_KEY = "theme";
 
@@ -16,7 +16,7 @@ function initThemeToggle() {
     const root = document.documentElement;
     const icon = button.querySelector(".theme-toggle__icon");
     const savedTheme = readStoredTheme();
-    const initialTheme = savedTheme || getSystemTheme();
+    const initialTheme = savedTheme || "dark";
 
     applyTheme(initialTheme);
     button.addEventListener("click", () => {
@@ -37,7 +37,8 @@ function initThemeToggle() {
 
 function readStoredTheme() {
     try {
-        const theme = localStorage.getItem(THEME_STORAGE_KEY);
+        if (typeof window.localStorage === "undefined") return null;
+        const theme = window.localStorage.getItem(THEME_STORAGE_KEY);
         return theme === "dark" || theme === "light" ? theme : null;
     } catch {
         return null;
@@ -46,17 +47,10 @@ function readStoredTheme() {
 
 function storeTheme(theme) {
     try {
-        localStorage.setItem(THEME_STORAGE_KEY, theme);
+        if (typeof window.localStorage === "undefined") return;
+        window.localStorage.setItem(THEME_STORAGE_KEY, theme);
     } catch {
         // The toggle remains usable when storage is unavailable.
-    }
-}
-
-function getSystemTheme() {
-    try {
-        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    } catch {
-        return "light";
     }
 }
 
