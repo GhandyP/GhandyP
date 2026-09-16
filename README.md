@@ -1,54 +1,42 @@
-# Martin Ghandy Prieto Rodriguez
+<p align="center">
+  <img src="assets/og-image.png" width="1200" height="630" alt="Ghandy — infrastructure and reliability">
+</p>
 
-## Infrastructure & DevOps Engineer
+# Ghandy
 
-I work across infrastructure, middleware, cloud platforms, automation, and observability. My focus is building secure, repeatable, production-ready systems for critical environments—whether they run on-premises, in the cloud, or across both.
+**Infrastructure & DevOps Engineer**
 
-[![GitHub](https://img.shields.io/badge/GitHub-GhandyP-181717?logo=github&logoColor=white)](https://github.com/GhandyP)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Martin%20Prieto-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/martin-prieto-564253a9)
-[![Email](https://img.shields.io/badge/Email-info%40gandyit.com-D14836?logo=gmail&logoColor=white)](mailto:info@gandyit.com)
+> Ideas do not survive without infrastructure. Infrastructure makes ideas survive.
 
-Maracay, Venezuela · Available for remote work and on-site opportunities in Caracas
+This is Ghandy’s portfolio repository: a small, vanilla HTML, CSS, and JavaScript site about making systems easier to understand, operate, and improve. The work crosses cloud and hybrid infrastructure, backend boundaries, automation, security-minded operations, observability, and data services.
 
-## What I do
+## What I build
 
-- **Infrastructure as Code:** design reproducible environments with Terraform and Terragrunt.
-- **Cloud and hybrid infrastructure:** work with AWS, on-premises systems, networking, IAM, load balancing, and resilient architecture.
-- **Middleware engineering:** configure and tune Nginx, Apache, Tomcat, SSL/TLS, and application delivery layers.
-- **Automation and delivery:** build Bash and Python automation and GitHub Actions workflows for dependable operations.
-- **Observability:** use Prometheus, Grafana, and CloudWatch for monitoring, alerting, and incident response.
-- **Data platforms:** support PostgreSQL administration, backups, replication, failover, and performance troubleshooting.
-- **Security-minded operations:** apply hardening, secrets management, scanning, and operational runbooks.
+- **Repeatable infrastructure:** cloud and hybrid environments where provisioning and change can be reviewed instead of improvised.
+- **Automation and delivery:** small, testable workflows for recurring operational work, with explicit failure paths and handoffs.
+- **Middleware and backend boundaries:** services connected through routing, reverse proxies, data stores, and understandable contracts.
+- **Observability and response:** health, alerts, and operational context that make investigation less dependent on guesswork.
+- **Security-minded operations:** access, secrets, hardening, and policy checks kept close to the design.
 
-## Technology landscape
+## Selected work themes
 
-`AWS` `Terraform` `Terragrunt` `Docker` `Kubernetes` `Nginx` `Apache` `Tomcat` `PostgreSQL` `Redis` `Prometheus` `Grafana` `CloudWatch` `GitHub Actions` `Linux` `Windows Server` `Bash` `Python` `HCL` `SQL` `Vultr` `Let's Encrypt`
+The public set is intentionally small. These are themes from the available context, not unsupported named case studies:
 
-## Selected experience
+- **Cloud infrastructure patterns** — AWS, Terraform/Terragrunt, networking, storage, databases, and delivery boundaries. *Private/evidence boundary: no client names, metrics, or project link are implied.*
+- **Middleware and service operations** — reverse proxies, containers, PostgreSQL, backups, monitoring, and maintenance across self-hosted contexts. *Private/evidence boundary: outcomes are not quantified here.*
+- **Data and reporting systems** — data organization, ETL and reporting, health checks, alerting, and operational visibility. *Private/evidence boundary: underlying data and artifacts are not published.*
+- **Safe automation and applied AI** — local workflow patterns around retrieval, tool boundaries, validation, provenance, and human review. *Prototype/research boundary: these themes are not presented as shipped products.*
 
-- **Infrastructure & DevSecOps Engineer — Financial Company (Remote)**  
-  AWS infrastructure, Terraform/Terragrunt, middleware, CI/CD, observability, and security hardening. *(August 2024 – November 2025)*
-- **Data Analyst — Cruz Roja Venezolana (Volunteer, Remote)**  
-  PostgreSQL administration, ETL automation, health checks, alerting, and incident reporting. *(January 2023 – Present)*
-- **Strategic Data Analyst — Publishart (Co-founder, Hybrid)**  
-  Virtual-server operations, Nginx, Docker, backups, monitoring, and security maintenance. *(January 2023 – August 2023)*
+## Methods
 
-## Certifications and learning
+I start with the constraint, then use contracts, schemas, adapters, fixtures, validation, allowlists, dry runs, approval steps, replay, and idempotency where they reduce ambiguity or risk. Documentation, tests, runbooks, limitations, and measured outcomes are part of the handoff. When an outcome is available, it should be observable when measured; otherwise, the boundary stays explicit.
 
-- Introduction to Transformer-Based NLP — NVIDIA Deep Learning Institute (February 2025)
-- Cybersecurity Essentials & Networking — Cisco Networking Academy (2022 – Present)
-- We Secure — Cybersecurity & Linux Hardening (2023 – 2024)
-- Machine Learning with Scikit-learn — Inria (January 2024)
-- AWS Solutions Architect Associate — in progress
-- Linux Professional Institute LPIC-1 — in progress
+## Current learning
 
-## Beyond the repository
+Cloud architecture, Linux hardening, applied ML and transformer-based NLP, data provenance, freshness, confidence, and product analytics. These are learning tracks, separate from delivered work and certification claims.
 
-I value clear operational documentation, practical automation, measurable reliability, and security that supports—not obstructs—engineering teams. I am open to full-time and contract opportunities, with a two-week notice period.
+## Links
 
-**Contact:** [info@gandyit.com](mailto:info@gandyit.com) · **Phone:** +58 424 334 4545
+[Portfolio](https://ghandyp.github.io/) · [GitHub](https://github.com/GhandyP) · [LinkedIn](https://linkedin.com/in/martin-prieto-564253a9)
 
-**Languages:** Spanish (Native) · English (Technical Advanced, B2-C1)  
-**Target sectors:** Insurance · Finance · Telecommunications · Energy
-
-[View the portfolio site](https://ghandyp.github.io) for a more visual overview.
+The public contact paths are GitHub and LinkedIn. For the visual overview, visit the [portfolio site](https://ghandyp.github.io/).

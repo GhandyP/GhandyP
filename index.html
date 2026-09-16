@@ -3,103 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Martin Ghandy Prieto Rodriguez is an Infrastructure and DevOps Engineer working across cloud, automation, middleware, security, and observability.">
-    <meta name="author" content="Martin Ghandy Prieto Rodriguez">
-    <meta name="theme-color" content="#f7f7f5">
-    <meta property="og:title" content="Martin Ghandy Prieto Rodriguez | Infrastructure & DevOps Engineer">
-    <meta property="og:description" content="Infrastructure, cloud, automation, middleware, security, and observability.">
+    <meta name="description" content="Ghandy builds understandable infrastructure, automation, and reliability practices for systems that need to last.">
+    <meta name="author" content="Ghandy">
+    <meta name="theme-color" content="#fbfaf7">
+    <meta property="og:title" content="Ghandy | Infrastructure &amp; DevOps">
+    <meta property="og:description" content="Infrastructure, automation, security-minded operations, and reliability practices from Ghandy.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ghandyp.github.io">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Martin Ghandy Prieto Rodriguez | Infrastructure & DevOps Engineer">
-    <meta name="twitter:description" content="Infrastructure, cloud, automation, middleware, security, and observability.">
-    <title>Martin Ghandy Prieto Rodriguez | Infrastructure & DevOps Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://ghandyp.github.io/">
+    <meta property="og:site_name" content="Ghandy">
+    <meta property="og:image" content="https://ghandyp.github.io/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ghandy — infrastructure and reliability">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ghandy | Infrastructure &amp; DevOps">
+    <meta name="twitter:description" content="Infrastructure, automation, security-minded operations, and reliability practices from Ghandy.">
+    <meta name="twitter:image" content="https://ghandyp.github.io/assets/og-image.png">
+    <meta name="twitter:image:alt" content="Ghandy — infrastructure and reliability">
+    <title>Ghandy | Infrastructure &amp; DevOps</title>
+    <link rel="canonical" href="https://ghandyp.github.io/">
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Martin Ghandy Prieto Rodriguez",
+        "name": "Ghandy",
         "jobTitle": "Infrastructure & DevOps Engineer",
-        "url": "https://ghandyp.github.io",
-        "sameAs": ["https://github.com/GhandyP", "https://linkedin.com/in/martin-prieto-564253a9"],
-        "knowsAbout": ["Terraform", "AWS", "Docker", "Kubernetes", "Nginx", "PostgreSQL", "Prometheus", "GitHub Actions", "DevSecOps", "Infrastructure as Code"]
+        "url": "https://ghandyp.github.io/",
+        "sameAs": [
+            "https://github.com/GhandyP",
+            "https://linkedin.com/in/martin-prieto-564253a9"
+        ],
+        "knowsAbout": [
+            "Infrastructure as Code",
+            "Cloud infrastructure",
+            "Automation",
+            "Observability",
+            "DevSecOps",
+            "Backend systems",
+            "Data platforms"
+        ]
     }
     </script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="site-header">
         <nav class="nav container" aria-label="Primary navigation">
-            <a class="nav__logo" href="#top" aria-label="Go to homepage">MGP<span>.</span></a>
-            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-                <span class="sr-only">Toggle navigation</span><span aria-hidden="true">☰</span>
+            <a class="nav__logo" href="#top" aria-label="Ghandy home">Ghandy<span aria-hidden="true">.</span></a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation">
+                <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+                <span class="sr-only">Open navigation</span>
             </button>
             <ul class="nav__menu" id="primary-menu">
-                <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#capabilities">Capabilities</a></li><li><a href="#learning">Learning</a></li><li><a href="#work">Selected work</a></li><li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Selected work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">◐</button>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+                <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+                <span class="sr-only">Switch to dark mode</span>
+            </button>
         </nav>
     </header>
 
     <main id="main-content">
+        <!-- hero -->
         <section class="hero" id="top" aria-labelledby="hero-title">
             <div class="container hero__grid">
                 <div class="hero__content">
-                    <p class="eyebrow">Infrastructure · Automation · Reliability</p>
-                    <h1 id="hero-title">Building calm, capable systems for critical work.</h1>
-                    <p class="hero__lede">I’m Martin Ghandy Prieto Rodriguez, an Infrastructure &amp; DevOps Engineer working across cloud, middleware, automation, security, and observability.</p>
-                    <div class="hero__actions"><a class="button button--solid" href="#work">Explore selected work</a><a class="button button--outline" href="mailto:info@gandyit.com">Start a conversation</a></div>
-                    <div class="hero__links" aria-label="Professional profiles"><a href="https://github.com/GhandyP" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/martin-prieto-564253a9" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+                    <p class="eyebrow">Ghandy · Infrastructure &amp; DevOps</p>
+                    <h1 id="hero-title">Infrastructure that helps ideas survive.</h1>
+                    <p class="hero__thesis">Ideas do not survive without infrastructure. Infrastructure makes ideas survive.</p>
+                    <p class="hero__lede">I work across cloud and hybrid infrastructure, backend boundaries, automation, security-minded operations, and observability.</p>
+                    <div class="hero__actions">
+                        <a class="button button--solid" href="#work">View selected work</a>
+                        <a class="button button--outline" href="#contact">Connect</a>
+                    </div>
+                    <div class="profile-links" aria-label="Public profiles">
+                        <a href="https://github.com/GhandyP" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        <a href="https://linkedin.com/in/martin-prieto-564253a9" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    </div>
                 </div>
-                <aside class="terminal" aria-label="Infrastructure principles">
-                    <div class="terminal__bar"><span aria-hidden="true">● ● ●</span><span>operating-principles.txt</span></div>
-                    <pre><code><span class="code-muted">01</span> repeatable_by_default: <span class="code-green">true</span>
-<span class="code-muted">02</span> security_in_the_design: <span class="code-green">true</span>
-<span class="code-muted">03</span> observable_in_production: <span class="code-green">true</span>
-<span class="code-muted">04</span> automation_over_drift: <span class="code-green">true</span>
-<span class="code-muted">05</span> documentation_is_delivery: <span class="code-green">true</span></code></pre>
+                <aside class="principles" aria-label="Working principles">
+                    <div class="principles__bar">
+                        <span aria-hidden="true">● ● ●</span>
+                        <span>working-principles.txt</span>
+                    </div>
+                    <pre><code><span class="code-muted">01</span> diagnose_the_constraint: <span class="code-sage">true</span>
+<span class="code-muted">02</span> automate_repeatable_work: <span class="code-sage">true</span>
+<span class="code-muted">03</span> observe_when_measured: <span class="code-sage">true</span>
+<span class="code-muted">04</span> make_limits_visible: <span class="code-sage">true</span>
+<span class="code-muted">05</span> document_the_handoff: <span class="code-sage">true</span></code></pre>
                 </aside>
             </div>
         </section>
 
-        <section class="section section--tint" id="about" aria-labelledby="about-title"><div class="container split"><div><p class="eyebrow">A practical point of view</p><h2 id="about-title">Infrastructure is an engineering product.</h2></div><div class="prose"><p>My work spans on-premises and hybrid cloud environments, from provisioning and middleware configuration to delivery pipelines and incident response. I use Infrastructure as Code, security-first practices, and observability to make systems easier to operate and improve.</p><p>Based in Maracay, Venezuela, I’m available for remote work and on-site opportunities in Caracas. I’m open to full-time and contract roles.</p></div></div></section>
+        <!-- about -->
+        <section class="section section--tint" id="about" aria-labelledby="about-title">
+            <div class="container split">
+                <div class="section-heading">
+                    <p class="eyebrow">A practical point of view</p>
+                    <h2 id="about-title">Infrastructure is an engineering product.</h2>
+                </div>
+                <div class="prose">
+                    <p>I approach systems work by making the constraint clear first, then shaping boundaries that can be understood, tested, and maintained. The work spans cloud foundations, middleware, data services, delivery workflows, and operational support.</p>
+                    <p>Tools matter, but they are subordinate to the problem: reduce drift, make failure visible, and leave the next person with a clearer system than the one they found.</p>
+                </div>
+            </div>
+        </section>
 
-        <section class="section" id="capabilities" aria-labelledby="capabilities-title"><div class="container"><p class="eyebrow">How I contribute</p><h2 id="capabilities-title">Capabilities</h2><div class="card-grid card-grid--six">
-            <article class="card"><span class="card__number">01</span><h3>Cloud &amp; hybrid infrastructure</h3><p>AWS and on-premises environments, networking, IAM, load balancing, scaling, and resilient architecture.</p></article>
-            <article class="card"><span class="card__number">02</span><h3>Infrastructure as Code</h3><p>Reusable Terraform and Terragrunt modules for repeatable, reviewable provisioning.</p></article>
-            <article class="card"><span class="card__number">03</span><h3>Middleware engineering</h3><p>Nginx, Apache, Tomcat, SSL/TLS, reverse proxies, routing, and performance tuning.</p></article>
-            <article class="card"><span class="card__number">04</span><h3>Automation &amp; delivery</h3><p>Bash, Python, GitHub Actions, CI/CD workflows, testing, and operational runbooks.</p></article>
-            <article class="card"><span class="card__number">05</span><h3>Observability</h3><p>Prometheus, Grafana, CloudWatch, health checks, alerting, and incident response.</p></article>
-            <article class="card"><span class="card__number">06</span><h3>Data platforms &amp; security</h3><p>PostgreSQL administration, backups, replication, failover, hardening, and secrets management.</p></article>
-        </div><div class="stack"><h3>Technical stack</h3><p class="tags"><span>AWS</span><span>Terraform</span><span>Terragrunt</span><span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span><span>Redis</span><span>Prometheus</span><span>Grafana</span><span>Linux</span><span>Python</span><span>Bash</span><span>GitHub Actions</span><span>Nginx</span><span>Apache</span><span>Tomcat</span></p></div></div></section>
+        <!-- capabilities -->
+        <section class="section" id="capabilities" aria-labelledby="capabilities-title">
+            <div class="container">
+                <div class="section-heading section-heading--row">
+                    <div>
+                        <p class="eyebrow">How I contribute</p>
+                        <h2 id="capabilities-title">Capabilities shaped around outcomes.</h2>
+                    </div>
+                    <p class="section-intro">A compact map of the problems I tend to work on. Specific claims stay tied to the available context and evidence.</p>
+                </div>
+                <div class="card-grid capability-grid">
+                    <article class="card capability-card">
+                        <p class="card__number">01</p>
+                        <h3>Repeatable infrastructure</h3>
+                        <p>Shape cloud and hybrid environments so provisioning and change can be reviewed instead of improvised.</p>
+                        <p class="card__detail">Infrastructure as Code · AWS · Linux</p>
+                    </article>
+                    <article class="card capability-card">
+                        <p class="card__number">02</p>
+                        <h3>Automation and delivery</h3>
+                        <p>Turn recurring operational work into small, testable workflows with explicit failure paths and handoffs.</p>
+                        <p class="card__detail">Python · Bash · GitHub Actions</p>
+                    </article>
+                    <article class="card capability-card">
+                        <p class="card__number">03</p>
+                        <h3>Middleware and backend boundaries</h3>
+                        <p>Connect services through routing, reverse proxies, data stores, and boundaries that remain understandable.</p>
+                        <p class="card__detail">Nginx · Docker · PostgreSQL</p>
+                    </article>
+                    <article class="card capability-card">
+                        <p class="card__number">04</p>
+                        <h3>Observability and response</h3>
+                        <p>Make health, alerts, and operational context visible enough to investigate a failure without guessing.</p>
+                        <p class="card__detail">Prometheus · Grafana · CloudWatch</p>
+                    </article>
+                    <article class="card capability-card">
+                        <p class="card__number">05</p>
+                        <h3>Security-minded operations</h3>
+                        <p>Keep access, secrets, hardening, and policy checks close to the design rather than adding them at the end.</p>
+                        <p class="card__detail">SSH · TLS · WAF concepts</p>
+                    </article>
+                </div>
+                <div class="stack">
+                    <h3>Technical vocabulary</h3>
+                    <ul class="tag-list" aria-label="Technical topics">
+                        <li>AWS</li>
+                        <li>Terraform</li>
+                        <li>Terragrunt</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>PostgreSQL</li>
+                        <li>Redis</li>
+                        <li>Prometheus</li>
+                        <li>Grafana</li>
+                        <li>Linux</li>
+                        <li>Python</li>
+                        <li>Bash</li>
+                        <li>GitHub Actions</li>
+                        <li>Nginx</li>
+                        <li>Apache</li>
+                        <li>Tomcat</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <section class="section section--tint" id="experience" aria-labelledby="experience-title"><div class="container narrow"><p class="eyebrow">Selected experience</p><h2 id="experience-title">A record of hands-on operations.</h2><div class="experience-list">
-            <article class="experience-item"><p class="experience-item__date">August 2024 – November 2025</p><div><h3>Infrastructure &amp; DevSecOps Engineer</h3><p class="experience-item__org">Financial Company · Remote</p><p>AWS infrastructure, Terraform/Terragrunt, middleware, CI/CD, observability, and security hardening.</p></div></article>
-            <article class="experience-item"><p class="experience-item__date">January 2023 – Present</p><div><h3>Data Analyst</h3><p class="experience-item__org">Cruz Roja Venezolana · Volunteer, Remote</p><p>PostgreSQL administration, ETL automation, health checks, alerting, and incident reporting.</p></div></article>
-            <article class="experience-item"><p class="experience-item__date">January 2023 – August 2023</p><div><h3>Strategic Data Analyst</h3><p class="experience-item__org">Publishart · Co-founder, Hybrid</p><p>Virtual-server operations, Nginx, Docker, backups, monitoring, and security maintenance.</p></div></article>
-        </div></div></section>
+        <!-- experience -->
+        <section class="section section--tint" id="experience" aria-labelledby="experience-title">
+            <div class="container narrow">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected experience</p>
+                    <h2 id="experience-title">Hands-on systems and operations context.</h2>
+                </div>
+                <ol class="timeline">
+                    <li class="timeline__item">
+                        <div class="timeline__marker" aria-hidden="true">01</div>
+                        <div class="timeline__content">
+                            <p class="timeline__context">Anonymized financial-services context</p>
+                            <h3>Infrastructure &amp; DevSecOps</h3>
+                            <p>Worked across AWS infrastructure, Terraform/Terragrunt, middleware, delivery workflows, observability, and security-minded operations.</p>
+                            <p class="timeline__boundary"><strong>Public boundary:</strong> Organization, dates, and outcomes are intentionally omitted here.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__marker" aria-hidden="true">02</div>
+                        <div class="timeline__content">
+                            <p class="timeline__context">Volunteer data and reporting context</p>
+                            <h3>Data analysis and operational support</h3>
+                            <p>Organized data and explored PostgreSQL, ETL, health checks, alerting, and incident reporting patterns.</p>
+                            <p class="timeline__boundary"><strong>Public boundary:</strong> Sensitive operational details and measured outcomes are not published.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <div class="timeline__marker" aria-hidden="true">03</div>
+                        <div class="timeline__content">
+                            <p class="timeline__context">Small-organization systems context</p>
+                            <h3>Infrastructure and data work</h3>
+                            <p>Combined virtual-server operations, reverse-proxy configuration, containerization, backups, monitoring, and maintenance.</p>
+                            <p class="timeline__boundary"><strong>Public boundary:</strong> The context is kept broad; this page does not infer a specific deployment result.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
 
-        <section class="section section--tint" id="learning" aria-labelledby="learning-title"><div class="container"><p class="eyebrow">Continuous learning</p><h2 id="learning-title">Certifications and study.</h2><div class="card-grid card-grid--four">
-                <article class="card"><h3>Introduction to Transformer-Based NLP</h3><p>NVIDIA Deep Learning Institute · February 2025</p></article>
-                <article class="card"><h3>Cybersecurity Essentials &amp; Networking</h3><p>Cisco Networking Academy · 2022 – Present</p></article>
-                <article class="card"><h3>Machine Learning with Scikit-learn</h3><p>Inria (France) · January 2024</p></article>
-                <article class="card"><h3>AWS Solutions Architect Associate</h3><p>In progress · Linux Professional Institute LPIC-1 also in progress.</p></article>
-            </div></div></section>
+        <!-- methods -->
+        <section class="section" id="methods" aria-labelledby="methods-title">
+            <div class="container">
+                <div class="section-heading section-heading--row">
+                    <div>
+                        <p class="eyebrow">Methods and evidence</p>
+                        <h2 id="methods-title">Make the work easier to trust.</h2>
+                    </div>
+                    <p class="section-intro">Reliability is a habit of design and verification, not an adjective added after the fact.</p>
+                </div>
+                <div class="card-grid methods-grid">
+                    <article class="card method-card">
+                        <h3>Diagnose first</h3>
+                        <p>Separate symptom, constraint, mechanism, and desired outcome before choosing a tool.</p>
+                    </article>
+                    <article class="card method-card">
+                        <h3>Design boundaries</h3>
+                        <p>Use contracts, schemas, adapters, fixtures, and explicit state transitions where systems meet.</p>
+                    </article>
+                    <article class="card method-card">
+                        <h3>Automate with guardrails</h3>
+                        <p>Prefer allowlists, validation, dry runs, approval steps, replay, and idempotency when change can cause harm.</p>
+                    </article>
+                    <article class="card method-card">
+                        <h3>Keep evidence close</h3>
+                        <p>Document assumptions, tests, runbooks, limitations, and outcomes as part of the handoff.</p>
+                    </article>
+                </div>
+                <p class="evidence-note">When an outcome is available, describe it as <strong>observable when measured</strong>. When it is not, keep the boundary visible instead of filling the gap with a claim.</p>
+            </div>
+        </section>
 
-            <section class="section" id="work" aria-labelledby="work-title"><div class="container"><p class="eyebrow">Selected work</p><h2 id="work-title">Systems designed for dependable operations.</h2><div class="card-grid card-grid--four">
-            <article class="work-card"><p class="work-card__type">Cloud infrastructure</p><h3>Financial cloud infrastructure</h3><p>AWS foundations including multi-tier networking, ECS Fargate, encrypted storage, RDS PostgreSQL, and Terraform/Terragrunt.</p><p class="tags"><span>AWS</span><span>Terraform</span><span>PostgreSQL</span></p></article>
-            <article class="work-card"><p class="work-card__type">Middleware</p><h3>Self-hosted middleware server</h3><p>Virtual-server operations with Nginx reverse proxy, Docker isolation, PostgreSQL, and automated maintenance.</p><p class="tags"><span>Nginx</span><span>Docker</span><span>Linux</span></p></article>
-            <article class="work-card"><p class="work-card__type">Observability</p><h3>Observability &amp; incident response</h3><p>Prometheus and Grafana monitoring with custom dashboards, alerting rules, and operational response practices.</p><p class="tags"><span>Prometheus</span><span>Grafana</span><span>Alerting</span></p></article>
-            <article class="work-card"><p class="work-card__type">Security</p><h3>Security hardening program</h3><p>Practical hardening through WAF rules, SSH key management, secrets rotation, scanning, and runbooks.</p><p class="tags"><span>Security</span><span>WAF</span><span>Automation</span></p></article>
-        </div><p class="private-note">Some work is private or belongs to client environments, so no public repository links are provided.</p></div></section>
+        <!-- learning -->
+        <section class="section section--tint" id="learning" aria-labelledby="learning-title">
+            <div class="container split">
+                <div class="section-heading">
+                    <p class="eyebrow">Current learning</p>
+                    <h2 id="learning-title">Study that stays close to practice.</h2>
+                </div>
+                <div class="learning-list">
+                    <article class="learning-item">
+                        <h3>Cloud architecture and infrastructure</h3>
+                        <p>Deepening patterns for repeatable environments, delivery boundaries, and operational clarity.</p>
+                    </article>
+                    <article class="learning-item">
+                        <h3>Security and Linux hardening</h3>
+                        <p>Continuing practical study of access, hardening, secrets, and safer operational workflows.</p>
+                    </article>
+                    <article class="learning-item">
+                        <h3>Applied ML and transformer-based NLP</h3>
+                        <p>Exploring how model workflows can be bounded by deterministic inputs, evaluation, and clear limitations.</p>
+                    </article>
+                    <article class="learning-item">
+                        <h3>Data and product analytics</h3>
+                        <p>Studying provenance, freshness, confidence, and decision support without overstating what a dataset proves.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <section class="section section--accent" id="contact" aria-labelledby="contact-title"><div class="container contact"><div><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Have an infrastructure challenge?</h2><p>Tell me what you’re building, operating, or trying to make more reliable.</p></div><div class="contact__actions"><a class="button button--solid" href="mailto:info@gandyit.com">info@gandyit.com</a><a class="text-link" href="tel:+584243344545">+58 424 334 4545</a><p>Maracay, Venezuela · Remote / Caracas</p><p>Spanish (Native) · English (Technical Advanced, B2-C1)</p><p>Insurance · Finance · Telecommunications · Energy</p><p>Two-week notice period</p></div></div></section>
+        <!-- selected work -->
+        <section class="section" id="work" aria-labelledby="work-title">
+            <div class="container">
+                <div class="section-heading section-heading--row">
+                    <div>
+                        <p class="eyebrow">Selected work themes</p>
+                        <h2 id="work-title">A small, honest public surface.</h2>
+                    </div>
+                    <p class="section-intro">These themes summarize the kinds of systems and experiments represented in the available public context.</p>
+                </div>
+                <div class="card-grid work-grid">
+                    <article class="work-card">
+                        <p class="work-card__type">Private work theme</p>
+                        <h3>Cloud infrastructure patterns</h3>
+                        <p>A body of work around AWS, Terraform/Terragrunt, networking, storage, databases, and delivery boundaries.</p>
+                        <p class="work-card__boundary">No client names, metrics, or project link are presented without a public artifact.</p>
+                        <ul class="tag-list" aria-label="Cloud infrastructure topics">
+                            <li>AWS</li>
+                            <li>Terraform</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </article>
+                    <article class="work-card">
+                        <p class="work-card__type">Private work theme</p>
+                        <h3>Middleware and service operations</h3>
+                        <p>Reverse proxies, containerized services, PostgreSQL, backups, monitoring, and maintenance across self-hosted contexts.</p>
+                        <p class="work-card__boundary">The contexts are private or not linked here; outcomes remain deliberately unquantified.</p>
+                        <ul class="tag-list" aria-label="Middleware topics">
+                            <li>Nginx</li>
+                            <li>Docker</li>
+                            <li>Linux</li>
+                        </ul>
+                    </article>
+                    <article class="work-card">
+                        <p class="work-card__type">Private work theme</p>
+                        <h3>Data and reporting systems</h3>
+                        <p>Data organization, ETL and reporting, health checks, alerting, and operational visibility for working teams.</p>
+                        <p class="work-card__boundary">Details stay broad where the underlying data and artifacts are not public.</p>
+                        <ul class="tag-list" aria-label="Data systems topics">
+                            <li>SQL</li>
+                            <li>ETL</li>
+                            <li>Reporting</li>
+                        </ul>
+                    </article>
+                    <article class="work-card">
+                        <p class="work-card__type">Prototype and research theme</p>
+                        <h3>Safe automation and applied AI</h3>
+                        <p>Local workflow patterns around retrieval, tool boundaries, validation, provenance, and human review.</p>
+                        <p class="work-card__boundary">These are prototype or research themes, not named products or outcome claims.</p>
+                        <ul class="tag-list" aria-label="Automation topics">
+                            <li>Python</li>
+                            <li>RAG patterns</li>
+                            <li>Validation</li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="private-note">The public set stays intentionally small: private context is respected, and evidence is not implied where no stable local or public artifact is available.</p>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-panel">
+                <div>
+                    <p class="eyebrow">Let’s connect</p>
+                    <h2 id="contact-title">Start with the system you are trying to understand.</h2>
+                    <p>GitHub and LinkedIn are the public paths for continuing the conversation.</p>
+                </div>
+                <div class="contact-links">
+                    <a class="button button--solid" href="https://github.com/GhandyP" target="_blank" rel="noopener noreferrer">Open GitHub <span aria-hidden="true">↗</span></a>
+                    <a class="button button--outline" href="https://linkedin.com/in/martin-prieto-564253a9" target="_blank" rel="noopener noreferrer">Open LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="site-footer"><div class="container"><p>Built with plain HTML, CSS, and JavaScript for GitHub Pages.</p><p>© 2025 Martin Ghandy Prieto Rodriguez</p></div></footer>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>Built with plain HTML, CSS, and JavaScript for GitHub Pages.</p>
+            <p>Ghandy · infrastructure, automation, and reliability.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
